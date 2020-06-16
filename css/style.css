@@ -45,8 +45,8 @@ body {
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .archive {
   max-width: 950px;
@@ -704,11 +704,14 @@ article .gallery .next:before {
   right: 10px;
 }
 article header {
-  text-align: left;
+  text-align: center;
 }
 article header .title a {
   display: block;
   width: 100%;
+}
+article .header-metadata {
+  margin: 2px;
 }
 article header time:before {
   font: 16px FontAwesome;
