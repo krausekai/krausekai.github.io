@@ -710,9 +710,6 @@ article header .title a {
   display: block;
   width: 100%;
 }
-article .header-metadata {
-  text-align: right;
-}
 article header time:before {
   font: 16px FontAwesome;
   content: "\f073";
@@ -956,7 +953,7 @@ article .tags:before {
   left: 5px;
 }
 article .addthis_inline_share_toolbox {
-  text-align: right;
+  text-align: center;
 }
 #comment .title {
   font-weight: normal;
