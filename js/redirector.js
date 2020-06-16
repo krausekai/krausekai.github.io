@@ -116,6 +116,10 @@
 
 	if (decodedPath.endsWith("/en/") || decodedPath.endsWith("/ja/")) decodedPath = decodedPath += "blog";
 
+	// add trailing slash (req. for Github pages and image src embed pathing)
+
+	if (!decodedPath.endsWith("/") && !decodedPath.endsWith(".html")) decodedPath = decodedPath += "/";
+
 	// redirect
 
 	let newUrl = window.location.protocol + "//" + window.location.host + decodedPath;
