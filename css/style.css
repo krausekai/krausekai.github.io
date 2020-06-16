@@ -703,13 +703,23 @@ article .gallery .next:before {
   content: '\f054';
   right: 10px;
 }
+article header {
+  text-align: left;
+}
+article header .title a {
+  display: block;
+  width: 100%;
+}
+article .header-metadata {
+  text-align: right;
+}
 article header time:before {
   font: 16px FontAwesome;
   content: "\f073";
   margin-right: 5px;
 }
 article header time {
-  display: block;
+  display: inline;
   color: #999;
   font: 0.9em "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "Meiryo UI", "メイリオ", "Meiryo", sans-serif;
   line-height: 1;
@@ -921,12 +931,14 @@ article footer a.comment-link:before {
 }
 article .categories,
 article .tags {
+  font-size: 16px;
   position: relative;
-  padding-left: 25px;
-  margin: 15px 0;
+  padding-left: 24px;
+  display: inline;
 }
 article .categories:before,
 article .tags:before {
+  padding-left: 5px;
   position: absolute;
   font: 1.1em FontAwesome;
 }
@@ -937,16 +949,14 @@ article .categories:before {
   left: 1px;
 }
 article .tags:before {
+  font: 16px FontAwesome;
   color: #999;
   content: '\f02b';
-  top: 3px;
-  left: 2px;
+  top: 2px;
+  left: 5px;
 }
-article .addthis {
-  margin-top: 15px;
-}
-article .addthis iframe {
-  margin-top: 0;
+article .addthis-inline {
+  text-align: right;
 }
 #comment .title {
   font-weight: normal;
@@ -1559,11 +1569,15 @@ pre .deletion {
   display: none !important;
 }
 #pre-content {
-  width: 98.2%;
-  max-width: 970px;
+  background-color: #181e22;
+  color: #9e9e9e;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   font-size: 16px;
-  margin-top: 5px;
-  margin-bottom: -15px;
-  padding: 4px;
+  padding-top: 1px;
+  padding-bottom: 3px;
+}
+#pre-content a {
+  color: #c1c1c1;
 }
