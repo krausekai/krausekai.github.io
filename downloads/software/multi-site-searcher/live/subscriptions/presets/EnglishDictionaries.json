@@ -1,0 +1,30 @@
+[
+	{
+		"enabled": "true",
+		"name": "LongmanDictionary",
+		"website": "https://www.ldoceonline.com/dictionary/<term>",
+		"category": "dictionaries",
+		"width": "640",
+		"adblock": "true",
+		"mobile": "true",
+		"remove_body_classes": "cc_banner-wrapper"
+	},
+	{
+		"enabled": "true",
+		"name": "WikipediaEn",
+		"website": "https://en.wikipedia.org/wiki/<term>",
+		"category": "dictionaries",
+		"width": "640",
+		"adblock": "true",
+		"mobile": "true"
+	},
+	{
+		"enabled": "true",
+		"name": "UrbanDictionary",
+		"website": "https://www.urbandictionary.com/define.php?term=<term>",
+		"category": "slang",
+		"width": "640",
+		"adblock": "true",
+		"remove_body_classes": "mug-ad,cc-banner,ad-panel"
+	}
+]

@@ -1,0 +1,11 @@
+[
+	{
+		"enabled": "true",
+		"name": "GoogleImages",
+		"website": "https://www.google.com.au/search?site=imghp&tbm=isch&source=hp&q=<term>",
+		"category": "images",
+		"adblock": "true",
+		"width": "1920",
+		"override_font": "Meiryo"
+	}
+]
