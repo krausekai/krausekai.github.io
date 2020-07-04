@@ -1,3 +1,29 @@
+v1.4.1
+
+General:
+- Improved speed of scrollbars
+- Improved explanation of settings
+- Activation screen now accepts an Invoice ID
+
+Gloss:
+- Added Gloss heatmap
+- Improved Gloss search results
+- Removed settings to hide known words
+- Improved reliability of exporting terms and display of known terms
+- Added dictionary "PrimaryMeaning" and "PrimaryReading" CSV field names
+- Renamed dictionary "Value" field name to "SelectedMeaning"
+- Renamed dictionary "Source" field name to "SourceText"
+- Renamed dictionary "SourceFg" field name to "SourceTextWithReadings"
+- When the Determined reading is unknown, the PrimaryReading will be assumed
+
+Kanji:
+- Renamed kanji "Value" field name to "Kanji"
+
+Articles:
+- Added TechCrunch and Gendai news subscriptions
+
+-------------------------------------------------------------------------------
+
 v1.4.0
 
 General:
