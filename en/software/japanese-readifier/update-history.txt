@@ -1,3 +1,20 @@
+v1.5.0
+
+Gloss:
+- Improved search results
+- Ignore empty results that are not Japanese
+- Exported words with empty readings will be substituted by its meaning
+- Added settings to better filter results, such as for subtitle files
+- Added Forvo and YouGlish to the External Search drop down menu in results
+
+Gloss & Kanji:
+- Added Google WaveNet Text-To-Speech API
+
+Settings:
+- Improved file and folder validation
+
+-------------------------------------------------------------------------------
+
 v1.4.1
 
 General:
