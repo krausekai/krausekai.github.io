@@ -1,9 +1,13 @@
+const { support } = require("jquery");
+
 (function() {
 	let url = window.location.href;
 	let decodedPath = decodeURIComponent(window.location.pathname);
 	if (!decodedPath.startsWith("/")) decodedPath = "/" + decodedPath;
 
 	// ignore these urls
+
+	if (url.includes("localhost:4000")) return;
 
 	let ignore = ["donate"];
 	for (let i = 0; i < ignore.length; i++) {
@@ -88,28 +92,31 @@
 
 	// change pages to new locale
 
-	let languageMap = {
-		"en": "en",
-		"en-us": "en",
-		"en-gb": "en",
-		"ja": "ja",
-		"ja-jp": "ja"
-	}
-
-	function getLanguage() {
-		if (typeof navigator === "object") {
-			if (navigator.languages && Array.isArray(navigator.languages)) return navigator.languages[0].toLowerCase();
-			if (navigator.language) return navigator.language.toLowerCase();
-			if (navigator.userLanguage) return navigator.userLanguage.toLowerCase();
-			if (navigator.browserLanguage) return navigator.browserLanguage.toLowerCase();
-			if (navigator.systemLanguage) return navigator.systemLanguage.toLowerCase();
+	function getBrowserLanguage() {
+		let languageMap = {
+			"en": "en",
+			"en-us": "en",
+			"en-gb": "en",
+			"ja": "ja",
+			"ja-jp": "ja"
 		}
+
+		let userLang = "";
+		if (typeof navigator === "object") {
+			if (navigator.languages && Array.isArray(navigator.languages)) userLang = navigator.languages[0].toLowerCase();
+			if (navigator.language) userLang = navigator.language.toLowerCase();
+			if (navigator.userLanguage) userLang = navigator.userLanguage.toLowerCase();
+			if (navigator.browserLanguage) userLang = navigator.browserLanguage.toLowerCase();
+			if (navigator.systemLanguage) userLang = navigator.systemLanguage.toLowerCase();
+		}
+
+		if (!languageMap[userLang]) userLang = keys(languageMap[0]);
+		return languageMap[userLang];
 	}
 
 	let pathLangs = ["/en/", "/ja/"];
 	if (pathLangs.indexOf(decodedPath.toLowerCase().substr(0, 4)) === -1) {
-		let lang = languageMap[getLanguage()] || "en";
-		if (lang) decodedPath = "/" + lang + decodedPath;
+		if (lang) decodedPath = "/" + getBrowserLanguage() + decodedPath;
 	}
 
 	// home pages

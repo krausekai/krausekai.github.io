@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.krausekai.com/"/>
-  <updated>2020-06-16T21:47:20.782Z</updated>
+  <updated>2020-09-13T02:04:41.941Z</updated>
   <id>https://www.krausekai.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.krausekai.com/en/blog/japanese-text-analysis-and-readability-tools/"/>
     <id>https://www.krausekai.com/en/blog/japanese-text-analysis-and-readability-tools/</id>
     <published>2018-07-26T14:00:00.000Z</published>
-    <updated>2020-06-16T21:47:20.782Z</updated>
+    <updated>2020-09-13T02:04:41.941Z</updated>
     
     <summary type="html">
     
@@ -35,6 +35,8 @@
     
       <category term="Japanese" scheme="https://www.krausekai.com/blog/tags/Japanese/"/>
     
+      <category term="Featured" scheme="https://www.krausekai.com/blog/tags/Featured/"/>
+    
   </entry>
   
   <entry>
@@ -42,7 +44,7 @@
     <link href="https://www.krausekai.com/ja/blog/masters-applied-translation-course-retrospective/"/>
     <id>https://www.krausekai.com/ja/blog/masters-applied-translation-course-retrospective/</id>
     <published>2018-05-01T14:00:00.000Z</published>
-    <updated>2020-06-16T21:48:44.907Z</updated>
+    <updated>2020-09-13T02:04:41.937Z</updated>
     
     <summary type="html">
     
@@ -53,6 +55,8 @@
     
       <category term="ja" scheme="https://www.krausekai.com/categories/ja/"/>
     
+    
+      <category term="Featured" scheme="https://www.krausekai.com/blog/tags/Featured/"/>
     
       <category term="Translation" scheme="https://www.krausekai.com/blog/tags/Translation/"/>
     
@@ -84,7 +88,7 @@
     <link href="https://www.krausekai.com/en/blog/affordable-email-and-newsletter-campaigns/"/>
     <id>https://www.krausekai.com/en/blog/affordable-email-and-newsletter-campaigns/</id>
     <published>2018-01-31T13:00:00.000Z</published>
-    <updated>2020-06-16T21:48:55.517Z</updated>
+    <updated>2020-06-16T22:24:46.814Z</updated>
     
     <summary type="html">
     
@@ -105,7 +109,7 @@
     <link href="https://www.krausekai.com/en/blog/comparing-popular-freelance-marketplaces/"/>
     <id>https://www.krausekai.com/en/blog/comparing-popular-freelance-marketplaces/</id>
     <published>2017-05-14T14:00:00.000Z</published>
-    <updated>2020-06-16T21:48:33.522Z</updated>
+    <updated>2020-09-13T02:04:41.941Z</updated>
     
     <summary type="html">
     
@@ -119,6 +123,8 @@
     
       <category term="Freelance" scheme="https://www.krausekai.com/blog/tags/Freelance/"/>
     
+      <category term="Featured" scheme="https://www.krausekai.com/blog/tags/Featured/"/>
+    
   </entry>
   
   <entry>
@@ -126,7 +132,7 @@
     <link href="https://www.krausekai.com/ja/blog/english-essay-subject-usage/"/>
     <id>https://www.krausekai.com/ja/blog/english-essay-subject-usage/</id>
     <published>2017-02-09T13:00:00.000Z</published>
-    <updated>2020-06-16T21:48:39.612Z</updated>
+    <updated>2020-09-13T02:04:41.937Z</updated>
     
     <summary type="html">
     
@@ -140,6 +146,8 @@
     
       <category term="English" scheme="https://www.krausekai.com/blog/tags/English/"/>
     
+      <category term="Featured" scheme="https://www.krausekai.com/blog/tags/Featured/"/>
+    
   </entry>
   
   <entry>
@@ -147,7 +155,7 @@
     <link href="https://www.krausekai.com/en/blog/adventures-in-japanese-riddles/"/>
     <id>https://www.krausekai.com/en/blog/adventures-in-japanese-riddles/</id>
     <published>2016-09-06T14:00:00.000Z</published>
-    <updated>2020-06-16T21:48:57.601Z</updated>
+    <updated>2020-08-19T00:22:52.224Z</updated>
     
     <summary type="html">
     
@@ -210,11 +218,11 @@
     <link href="https://www.krausekai.com/ja/blog/silly-and-baka-difference/"/>
     <id>https://www.krausekai.com/ja/blog/silly-and-baka-difference/</id>
     <published>2016-04-09T14:00:00.000Z</published>
-    <updated>2020-06-16T21:48:41.917Z</updated>
+    <updated>2020-09-14T20:56:50.716Z</updated>
     
     <summary type="html">
     
-      &lt;img class=&quot;banner&quot; alt=&quot;Art provided by Vecteezy&quot;  src=&quot;/ja/blog/silly-and-baka-difference/banner.jpg&quot; /&gt;&lt;p&gt;大抵のサイトと辞書によると、「Silly」は日本語で言う「&lt;a href=&quot;http://dictionary.goo.ne.jp/jn/174677/meaning/m0u/%E3%81%B0%E3%81%8B/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ばか&lt;/a&gt;」に似ていますが、「ばか」は「Stupid」にも似ていますので、本当は「Silly」と違います。&lt;/p&gt;&lt;p&gt;どうやら日本語にはSillyのニュアンスを持つ言葉がないそうです。&lt;/p&gt;&lt;p&gt;下記を例に取りましょう：&lt;/p&gt;&lt;blockquote&gt;I may be silly, but not stupid!&lt;/blockquote&gt;&lt;p&gt;「ばか」は「Stupid」の意味も伝えますので、上の「Silly」をどう翻訳すればいいでしょうか？&lt;/p&gt;
+      &lt;img class=&quot;banner&quot; alt=&quot;Art provided by Vecteezy&quot;  src=&quot;/ja/blog/silly-and-baka-difference/banner.jpg&quot; /&gt;&lt;p&gt;大抵のサイトと辞書によると、「Silly」は日本語で言う「&lt;a href=&quot;http://dictionary.goo.ne.jp/jn/174677/meaning/m0u/%E3%81%B0%E3%81%8B/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ばか&lt;/a&gt;」に似ていますが、「ばか」は「Stupid」にも似ていますので、本当は「Silly」と違います。どうやら日本語にはSillyのニュアンスを持つ言葉がないそうです。下記を例に取りましょう：&lt;/p&gt;&lt;blockquote&gt;I may be silly, but not stupid!&lt;/blockquote&gt;&lt;p&gt;「ばか」は「Stupid」の意味も伝えますので、上の「Silly」をどう翻訳すればいいでしょうか？&lt;/p&gt;
     
     </summary>
     
@@ -224,6 +232,8 @@
     
       <category term="English" scheme="https://www.krausekai.com/blog/tags/English/"/>
     
+      <category term="Featured" scheme="https://www.krausekai.com/blog/tags/Featured/"/>
+    
   </entry>
   
   <entry>
@@ -231,7 +241,7 @@
     <link href="https://www.krausekai.com/en/blog/dictionaries-and-goals-in-japanese/"/>
     <id>https://www.krausekai.com/en/blog/dictionaries-and-goals-in-japanese/</id>
     <published>2016-02-16T13:00:00.000Z</published>
-    <updated>2020-06-16T21:48:51.672Z</updated>
+    <updated>2020-09-13T02:04:41.937Z</updated>
     
     <summary type="html">
     
@@ -244,6 +254,8 @@
     
     
       <category term="Japanese" scheme="https://www.krausekai.com/blog/tags/Japanese/"/>
+    
+      <category term="Featured" scheme="https://www.krausekai.com/blog/tags/Featured/"/>
     
   </entry>
   
