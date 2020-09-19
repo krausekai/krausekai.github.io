@@ -1,5 +1,3 @@
-const { support } = require("jquery");
-
 (function() {
 	let url = window.location.href;
 	let decodedPath = decodeURIComponent(window.location.pathname);
