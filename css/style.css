@@ -33,14 +33,14 @@ body {
   overflow-wrap: break-word;
   font-size: 16px;
   color: #333;
-  font-family: "NotoSansJp";
+  font-family: "NotoSansJp", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "Meiryo UI", "メイリオ", "Meiryo", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 a {
-  font-family: "NotoSans" !important;
+  font-family: "NotoSans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "Meiryo UI", "メイリオ", "Meiryo", sans-serif !important;
 }
 #header,
 #footer {
@@ -85,7 +85,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "Meiryo UI", "メイリオ", "Meiryo", sans-serif;
+  font-family: "NotoSans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "Meiryo UI", "メイリオ", "Meiryo", sans-serif;
 }
 h1 {
   font-size: 26px;
@@ -229,7 +229,6 @@ body #pagination a:hover {
   color: #fff;
 }
 .homepage {
-  font-family: "NotoSansJp";
   font-size: 16px;
   line-height: 30px;
 }
@@ -840,7 +839,7 @@ article header time:before {
 article header time {
   display: inline;
   color: #999;
-  font: 0.9em "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "Meiryo UI", "メイリオ", "Meiryo", sans-serif;
+  font: 0.9em "NotoSans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "Meiryo UI", "メイリオ", "Meiryo", sans-serif;
   line-height: 1;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -1272,7 +1271,7 @@ footer h2 {
 }
 .entry .gist .gist-file .gist-data pre {
   padding: 0 !important;
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "Meiryo UI", "メイリオ", "Meiryo", sans-serif;
+  font-family: "NotoSansJp", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "Meiryo UI", "メイリオ", "Meiryo", sans-serif;
 }
 .entry .gist .gist-file .gist-meta {
   background: none;
