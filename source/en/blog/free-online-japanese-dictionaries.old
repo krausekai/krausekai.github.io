@@ -1,0 +1,156 @@
+---
+title: Free Online Japanese Dictionaries
+old-title: Free Online Japanese Dictionaries
+lang: en
+date: 2016-02-17
+updated: 2016-02-17
+cover: banner.jpg
+categories:
+	- en
+tags:
+- Japanese
+---
+
+<img class="banner" alt="Art provided by Vecteezy" src="{% asset_path "banner.jpg" %}" />
+
+
+As a beginner in Japanese, knowing where to find dictionaries or how to search for definitions can be confusing. Knowing where to find reputable information is essential for good study habits, and to minimize mistakes when speaking in Japanese. Here are a variety of resources to start you on your way.
+
+<!--
+
+
+- MIA vs Japanese Readifier
+- Monolingual vs Bilingual dictionaries:
+	https://blog.thelinguist.com/2018/03/20/monolingual-or-bilingual-dictionaries-for-lan/
+	https://www.reddit.com/r/languagelearning/comments/3bb1kt/which_is_better_for_language_learners_monolingual/
+
+	Bilingual allows shotgun, quick and efficient, lookup and understanding of concepts.
+	Monolingual allows specific and slow lookup of detail, nuance, and usage.
+
+	My Argument (and Steve Kauffman's, probably):
+		Stuffing Anki with full monolingual definitions is not very helpful: it contains too much information, leading to information overload, esp. without meaningful context. Meaningful context comes from using the language. Anki is not a means to use the language, but to review one's memory of it.
+
+		One cannot remember dozens usages of a word, however, one should remember a primary usage or overall concept of the word.
+
+		Use a bilingual dictionary for new words, so as to quickly return to actual meaningful context and language immersion. Use a monolingual dictionary when term usage becomes confusing, and detailed instruction is necessary.
+
+		Take 'feeling' for example. At a basic level, both 感じ and 気持ち as synonyms is OK. But using the words, use them as found in native immersion. Otherwise, then monolingual is necessary to understand how to use both terms, since you lack native immersion to intuitively know.
+
+		Monolingual fills a gap when lacking knowledge, experience, and immersion. Bilingual allows quick grasping of the concept, and that should be enough.
+
+		In Anki, this is a coin flip:
+			- As a beginner, monolingual dictionary won't much if any sense
+			- If having used a bilingual dictionary as a beginner, might become OCD later to correct cards to monolingual
+			- At what point do Anki decks become dictionaries, rather than to reinforce concepts?
+			- Then it becomes more a question of "do I have all meanings" rather than "do I have the necessary meanings?"
+				- one could argue that if bilingual isn't enough, the monolingual might not either, and may need to consult many monolingual dictionaries
+				- JReadifier: there is no perfect dict, whether bi or mono, and so it would be difficult to support 'all' dictionaries - copyright aside
+				- it is instead better to use MultiSiteSearcher and copy-paste relevant sections into Anki, etc, as needed
+
+	Should Anki just be a dictionary?
+		- It's an offline lookup tool, and although one does not own the copyright, having a local copy reserves 'eternal' ownership
+		- That aside, almost everyone is online today, and can look up a word when needed for a refresher
+		- Anki cards should contain only the main points / definitions, and reinforce a concept or context and not be a dictionary
+
+	Monolingual dictionaries overly explain, whether Jp or En:
+		https://kotobank.jp/word/%E5%A4%A7%E4%BA%8B-449882
+		https://www.dictionary.com/browse/important?s=t
+
+	Repetition is good, using similar terms to create connection and explain when the word can be used.
+
+	However for Anki cards, this is too much information that can be simplified.
+
+	If a term in language A is exactly the same as language B's usage, except in certain cases, then only list the exceptions.
+
+	Focus on the differences, not that which is the same.
+
+	Dictionaries should only be a guide - simplify definitions meaningfully for you.
+
+	Therefore:
+		Use JReadifier to create bilingual cards efficiently and only care to use MultiSiteSearcher for nuance and word differentiation if confused.
+		Do not import entire dictionary entries into Anki cards: too repetitive and verbose, not meaningful context, creates an illusion of how a word must be used or remembered rather than as a concept or feeling in general, rely on actual language use and immersion to learn and not Anki which is only for memorization:
+
+		https://www.reddit.com/r/Anki/comments/b0dhc6/is_anki_made_for_learning_or_memorizing/
+
+		It's better to make cards yourself than to copy-paste dictionary explanations.
+
+		Personalized cards are better remembered...
+
+
+		I prefer a shotgun approach: bilingual for most definitions, monolingual when terms are confusing or nuance is necessary. However, if one needs to use a dictionary often, then the word is either not important or the learner isn't 'learning' enough. Too much information on flashcards can create information overload. Dictionary definitions have many definitions that can cause confusion. Particularly monolingual, since they are often too verbose. Should always edit cards to focus on core concepts imo.
+
+		Just quicker to use bilingual for most terms, and continue actual content rather than change focus to a dictionary definition unless necessary
+
+		When you review words in Anki, you don't think of all that word's use or definitions do you?
+
+		Like in NL if I see a word, I don't need to think about it's meaning, I just know it. For TL I see a concept or remember contexts dating back years when I learned the word, or just know it as I do in NL. Only think about new words in definitions I think, until I have a visualized concept of the word.
+-->
+
+<!--more-->
+
+<h3>The Most Popular Dictionary</h3>
+
+Firstly, the most popular dictionary needs to be discussed - and you've probably already used it. It's called by a variety of names, like [EDICT, JMDIC, or WWJDIC](http://www.edrdg.org/jmdict/edict.html), and is used in a variety of websites like [Jisho](http://jisho.org), applications like [Japanese Readifier](https://github.com/krausekai/japanese-readifier), browser extensions like [YomiChan](https://foosoft.net/projects/yomichan/), and phone applications [JED](https://play.google.com/store/apps/details?id=com.umibouzu.jed). This is a Japanese-English dictionary, curated by community effort and made available by Jim Breen. This dictionary uses a "shot-gun approach", by combining the various uses and definitions of terms together in one entry. It is a great way to jump into understanding sentences, and the aforementioned programs make it easy to save and export definitions for other applications like [Anki](https://apps.ankiweb.net/).
+
+The downside to this shot-gun approach, is that the listed definitions lack context, and in fact, may be misleading. This is especially evident for the term <a href="http://jisho.org/search/Feeling">"feeling"</a>, where English synonyms are confusingly used. Fortunately, as a community effort, the dictionary can be improved (application form [here](http://www.edrdg.org/jmdictdb/cgi-bin/srchform.py?svc=jmdict&amp;sid=), or [here](http://www.edrdg.org/jmdictdb/cgi-bin/srchformq.py?svc=jmdict&amp;sid=)) by your edits (and perhaps the definitions for 'feeling' were already improved by the time you're reading this). However, unless applications that make use of this dictionary update to the latest version, the latest changes will not be displayed.
+
+Often bundled with EDICT, is <a href="https://tatoeba.org/">Tanaka Corpus</a>, a sentence database. Originally, the database was supposedly written by students of English and Japanese, and has been left to the community to maintain. However, it is error-ridden, which problems are explained by <a href="http://www.manythings.org/corpus/warningtatoeba.html">ManyThings</a>.
+
+It would then be best to consider whether the shot-gun approach is ideal for you. One could focus on the quality of every word, perhaps even wasting time, or one could focus on quantity and excel much further in understanding, if only surface-level. In fact, check out [Japanese Text Analaysis and Readability tools](/2018/07/27/japanese-text-analysis-and-readability-tools/) to make more efficient use of your learning time.
+
+<h3>Recommended Beginner Dictionaries</h3>
+
+Onto the recommended beginner dictionaries, these will help aid understanding of nuance, albeit they may be lacking.
+
+- <a href="https://dictionary.cambridge.org/dictionary/english-japanese/">Cambridge Dictionary</a> (English → Japanese):
+A simple dictionary that can be searched in English. Definitions are clearly separated by usage and easy to understand. For comparison to WWWDIC, here are the results for "<a href="https://dictionary.cambridge.org/dictionary/english-japanese/feeling">feeling</a>". In order to search in Japanese, use the following phrase in Google (replace "SEARCH_TERM" with a Japanese word):
+<blockquote>site:https://dictionary.cambridge.org/dictionary/english-japanese/ SEARCH_TERM</blockquote>
+
+- <a href="http://dictionary.j-cat.org/">Japanese Learner's Dictionary</a> (English ↔ Japanese):
+Provides definitions with example sentences. For comparison, here is this dictionary's lookup for "<a href="http://dictionary.j-cat.org/EtoJ/index.php?typedword=Feeling">feeling</a>".
+
+<h3>Recommended Advanced Dictionaries</h3>
+
+The following dictionaries contain definitions primarily in Japanese, and words are properly explained. Beginners may still find these dictionaries useful, by translating the definitions using WWWDIC or Google Translate. Although this method will not be completely reliable, the definitions come with context.
+
+- <a href="http://ejje.weblio.jp/">Weblio</a> (English ↔ Japanese):
+A collection of various dictionaries and example sentences (including WWWDIC and Tanaka Corpus), viewable in one place.
+
+- <a href="http://www.alc.co.jp/">ALC</a> (English ↔ Japanese):
+Primarily a sentence corpus. Examples of grammar structure for expressions, and detailed examples are displayed.
+
+- <a href="http://dictionary.goo.ne.jp/jn/">Goo</a> & <a href="http://dic.yahoo.co.jp/">Yahoo's Kotobank</a> (Japanese ・ English ↔ Japanese):
+Similarly to Jisho, Goo also shows whether a Kanji is commonly used: "×" (Not used), "▽" (becoming less used), and "△" (commonly used). Goo also offers a dedicated Japanese-only lookup for distinguishing synonyms. Additionally, Goo has an English only page, but it has too many issues similar to EDICT. Yahoo's Kotobank is an alternative.
+
+<h3>Recommended Non-Standard Dictionaries</h3>
+
+- <a href="http://e-words.jp/">E-words</a> (Japanese ↔ Japanese):
+Dictionary for computing terminology.
+
+- <a href="http://zokugo-dict.com/">Zokugo</a> (Japanese):
+Dictionary for slang dating back to the 1900s.
+
+- <a href="https://dic.pixiv.net/">Pixiv</a> & <a href="http://dic.nicovideo.jp/">NicoVideo</a> (Japanese ↔ Japanese):
+Dictionaries for slang, such as from manga, anime, and informal conversation. Maintained by the community.
+
+<h3>When Dictionaries Aren't Enough...</h3>
+
+- Ask questions to other learners: <a href="https://japanese.stackexchange.com/">Japanese.stackexchange</a> and <a href="https://www.reddit.com/r/LearnJapanese/">LearnJapanese Sub-Reddit</a>.
+
+- Ask questions to Japanese people: <a href="https://hinative.com/">HiNative</a>.
+
+- Try searching for differences between words on <a href="https://google.co.jp/">Google Japan</a>, using these terms:
+
+<blockquote>wordとwordの違い</blockquote>
+
+Likewise, it is possible to search for the meaning or translation of phrases from English:
+
+<blockquote>日本語で"phrase"の意味</blockquote>
+
+Or, the meaning of a word:
+
+<blockquote>wordとは</blockquote>
+
+Remember to also check the meaning of Kanji in the word you want to understand, although this isn't always helpful.
+
+Good luck with your studies!

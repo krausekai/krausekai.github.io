@@ -1,0 +1,155 @@
+<div class="homepage">
+	<header class='header-top' role='banner'>
+		<div class='header-inner' style="text-align: center">
+			<h1 class="header-title title-stroke"><a href="<%- localize('home') %>"><%= localize('title') %></a></h1>
+
+			<div class='header-social header_cell'>
+				<%- partial('_partial/header_socials') %>
+			</div>
+			<div class='clearfix'></div>
+		</div>
+	</header>
+
+	<div class="screen-section">
+		<div class="content">
+			<i class="far fa-hand-peace"></i>
+
+			<h1>
+				<span><%= localize('homepage.introduction-title', 'en') %></span>
+				<span class="hidden"><%= localize('homepage.introduction-title', 'ja') %></span>
+			</h1>
+
+			<div class="columns">
+				<div class="column">
+					<p><%- localize('homepage.introduction-text', 'en') %></p>
+				</div>
+				<div class="column">
+					<p><%- localize('homepage.introduction-text', 'ja') %></p>
+				</div>
+			</div>
+			<hr />
+		</div>
+	</div>
+
+	<div class="screen-section">
+		<div class="content">
+			<i class="fas fa-language"></i>
+
+			<h1>
+				<span><%= localize('homepage.translation-title', 'en') %></span>
+				<span class="hidden"><%= localize('homepage.translation-title', 'ja') %></span>
+			</h1>
+
+			<div class="columns">
+				<div class="column">
+					<p><%- localize('homepage.translation-text', 'en') %></p>
+				</div>
+				<div class="column">
+					<p><%- localize('homepage.translation-text', 'ja') %></p>
+				</div>
+			</div>
+
+			<a href="<%= localize('menu.Translation Services', 'en') %>" class="button read-more">See More</a>
+			<a href="<%= localize('menu.日英翻訳サービス', 'ja') %>" class="button read-more ja hidden">もっと見る</a>
+
+			<hr />
+		</div>
+	</div>
+
+	<div class="screen-section">
+		<div class="content">
+			<i class="fas fa-laptop"></i>
+
+			<h1>
+				<span><%= localize('homepage.software-title', 'en') %></span>
+				<span class="hidden"><%= localize('homepage.software-title', 'ja') %></span>
+			</h1>
+
+			<div class="columns">
+				<div class="column">
+					<p><%- localize('homepage.software-text', 'en') %></p>
+				</div>
+				<div class="column">
+					<p><%- localize('homepage.software-text', 'ja') %></p>
+				</div>
+			</div>
+
+			<a href="<%= localize('menu.Software', 'en') %>" class="button read-more">See More</a>
+			<a href="<%= localize('menu.アプリケーション', 'ja') %>" class="button read-more ja hidden">もっと見る</a>
+
+			<hr />
+		</div>
+	</div>
+
+	<div class="screen-section">
+		<div class="content">
+			<i class="fas fa-rss-square"></i>
+
+			<h1>
+				<span><%= localize('homepage.blog-title', 'en') %></span>
+				<span class="hidden"><%= localize('homepage.blog-title', 'ja') %></span>
+			</h1>
+
+			<div class="columns">
+				<div class="column">
+					<p><%- partial('_partial/panels/list_posts_by_category_tag', {category: "en", tag: "featured" }) %></p>
+				</div>
+				<div class="column">
+					<p><%- partial('_partial/panels/list_posts_by_category_tag', {category: "ja", tag: "featured" }) %></p>
+				</div>
+			</div>
+
+			<a href="<%= localize('menu.Blog', 'en') %>" class="button read-more">See More</a>
+			<a href="<%= localize('menu.ブログ', 'ja') %>" class="button read-more ja hidden">もっと見る</a>
+
+			<hr />
+		</div>
+	</div>
+</div>
+
+<%- partial('_partial/footer') %>
+
+<script>
+	function getBrowserLanguage() {
+		let languageMap = {
+			"en": "en",
+			"en-us": "en",
+			"en-gb": "en",
+			"ja": "ja",
+			"ja-jp": "ja"
+		}
+
+		let userLang = "";
+		if (typeof navigator === "object") {
+			if (navigator.languages && Array.isArray(navigator.languages)) userLang = navigator.languages[0].toLowerCase();
+			if (navigator.language) userLang = navigator.language.toLowerCase();
+			if (navigator.userLanguage) userLang = navigator.userLanguage.toLowerCase();
+			if (navigator.browserLanguage) userLang = navigator.browserLanguage.toLowerCase();
+			if (navigator.systemLanguage) userLang = navigator.systemLanguage.toLowerCase();
+		}
+
+		if (!languageMap[userLang]) userLang = keys(languageMap[0]);
+		return languageMap[userLang];
+	}
+
+	// show Ja buttons, hide En
+	let browserLanguage = getBrowserLanguage();
+	if (browserLanguage === "ja") {
+		for (button of document.querySelectorAll("a")) {
+			if (button.classList.contains("button")) button.classList.toggle("hidden");
+		}
+	}
+
+	function sleep(ms) {
+		return new Promise((resolve) => {
+			setTimeout(resolve, ms);
+		});
+	}
+
+	setInterval(async () => {
+		for (heading of document.querySelectorAll(".screen-section h1 span")) {
+			//await sleep(500)
+			heading.classList.toggle("hidden");
+		}
+	}, 3500);
+</script>

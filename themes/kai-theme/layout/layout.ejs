@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="<%= lang(page.path) %>">
+	<%- partial('_partial/head') %>
+
+	<!-- body is determined by front-matter 'layout' property or inferred (page, post) -->
+	<!-- default: article.ejs -->
+
+	<body>
+		<% if (page.layout === "none") { %>
+			<%- page.content %>
+		<% } else if (page.layout === "homepage") { %>
+			<%- body %>
+		<% } else if (page.layout !== "none") { %>
+			<header id="header">
+				<%- partial('_partial/header') %>
+			</header>
+
+			<div id="content">
+				<%- body %>
+			</div>
+
+			<footer id='footer'>
+				<%- partial('_partial/footer', {blog: true}) %>
+			</footer>
+
+			<%#- partial('_partial/after_footer') %>
+		<% } %>
+	</body>
+</html>

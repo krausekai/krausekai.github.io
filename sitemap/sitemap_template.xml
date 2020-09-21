@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	{% set excludes = ["404.html"] %}
+
+  {% for post in posts %}
+		{% for exclude in excludes %}
+			{% if post.permalink.indexOf(exclude) === -1 and not post.permalink.endsWith(".html") %}
+				<url>
+					<loc>{{ post.permalink | uriencode }}</loc>
+					{% if post.updated or post.date %}
+						{# if post.updated is undefined, it will be the current system time #}
+						<lastmod>{{ post.updated.toISOString() or post.date.toISOString() }}</lastmod>
+					{% endif %}
+				</url>
+			{% endif %}
+  	{% endfor %}
+  {% endfor %}
+
+	{%
+		set includes =
+		["https://www.krausekai.com/japanese-tools/known-word-checker/",
+		"https://www.krausekai.com/japanese-tools/kanji-radical-search/",
+		"https://www.krausekai.com/japanese-tools/cloze-tester/",
+		"https://www.krausekai.com/japanese-english-fuzzy-match/"]
+	%}
+
+  {% for post in includes %}
+		<url>
+			<loc>{{ post }}</loc>
+		</url>
+  {% endfor %}
+</urlset>

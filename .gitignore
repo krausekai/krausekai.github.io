@@ -1,11 +1,20 @@
+backup
+
+# Development
+.vscode
 .DS_Store
-Thumbs.db
+*.sublime-*
+
+# Distibution
+dist
+public
+themes/learn-plasma/source
+
+# Node
+node_modules
+npm-debug.log
+
+# hexo
 db.json
-*.log
-node_modules/
-public/
-.deploy*/
-*.bak
-_*
-*.psd
-*.afphoto
+debug.log
+.test-server-id
