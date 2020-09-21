@@ -839,7 +839,6 @@ article header time:before {
 article header time {
   display: inline;
   color: #999;
-  font: 0.9em "NotoSans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "Meiryo UI", "メイリオ", "Meiryo", sans-serif;
   line-height: 1;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -1551,6 +1550,11 @@ pre .deletion {
 .float-right {
   float: right;
 }
+.text-right {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
 .product-title {
   font-size: 26px;
 }
@@ -1697,4 +1701,8 @@ pre .deletion {
 }
 #pre-content a {
   color: #c1c1c1;
+}
+.vecteezy_disclaimer:after {
+  content: "Art provided by Vecteezy";
+  font-size: 8px;
 }
