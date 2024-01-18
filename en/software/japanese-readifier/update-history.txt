@@ -1,0 +1,503 @@
+v1.7.1
+
+General
+- Improved updater checks
+
+Gloss
+- Added Naver Papago translate to tools menu
+- Added Bing Images to definition menus
+- Fixed combined kana terms not splitting
+- Improved lookahead searches
+- Starred: changed to remove all meanings
+- Fixed search not showing Microsoft IME suggestions
+
+Audio
+- Fixed cases where sanitized file names did not replace CSV audio tags
+
+-------------------------------------------------------------------------------
+
+v1.7.0
+
+General
+- Updated dependencies and deprecated methods
+- Added true CSV support for import and export
+- Updated Settings descriptors
+- Prevented multiple app instances
+- Updated dictionary files
+
+Known and Starred
+- Changed to export and remove only the primary meaning
+- Removed automatic file optimization to prevent conflicts
+- Added manual file optimization button for after CSV setup
+
+Gloss
+- Improved search, filters, and result sorting
+- Fixed destruction of unknown katakana terms
+- Added SelectedReading as an exportable tag
+- Clipboard now removes spaces and new lines
+- Search bar now focuses active term or cursor
+- Added meaning, and improved reading, determinism
+
+Kanji
+- Allowed searches with both meaning & reading ('see み')
+- Fixed duplicate kanji results from searched readings
+- Improved performance of searches from readings
+
+Articles
+- Added Fukuoka Now subscription
+- Removed defunct TechCrunch subscription
+- Improved wait_time and timeout handling
+- Subscriptions will now ignore modified wait_time
+- Fixed race condition where URL did not match content
+- Removed JSDom dependency
+
+Audio
+- Allowed numbers in sanitized file names
+
+-------------------------------------------------------------------------------
+
+v1.6.2
+
+Gloss
+- Improved search results and filters
+- Improved detected tags for expansion in definitions
+- Improved Japanese text type detection, particularly for clipboard
+- Clipboard will now ignore primarily non-Japanese texts
+- Improved external search menu in definitions
+	- Added category titles
+	- Removed とは coercion for Google
+- Added a Tools menu for online Glossers and Translators
+
+Articles
+- Searches can now be stopped
+- Updated subscriptions will now be more apparent
+- Breaking: Changed body syntax to querySelector syntax, and removed "body_type"
+- Breaking: Changed tag, id, and class removal syntax to querySelectorAll syntax using the name "remove_query_selectors"
+- Added chunichi newspaper subscription
+
+-------------------------------------------------------------------------------
+
+v1.6.1
+
+General
+- Changed activation to donation
+- Prevent context menu on file: links
+
+Gloss
+- Improved Tab key navigation
+	- Tab will now select dropdown & input fields
+- Improved heatmap performance and display
+	- Added rounded borders to grammar
+	- Fixed term highlight display priority
+- Improved result performance and display
+	- Added styling to info tags
+	- Added clickable search links
+- Improved external search menu
+	- Added CaptionPop
+	- Added とは to Google to coerce Japanese results
+- Improved search results and sorting
+- Fixed possibility of duplicate search results
+- Fixed possibility of duplicate search menu history
+- Improved opening of dropdown menus
+- Improved determined reading (incl. from furigana)
+- Improved removal of furigana (still experimental)
+- Changed bracketed hiragana removal to kana
+- Improved Term Lookup (renamed from Word Lookup)
+	- Hide readability pane on Term Lookup
+	- Changed fields to Meaning or Reading
+	- Improved performance and definition field accuracy
+	- Added tag abstraction (re: t.has:漢字 d.noun:kanji)
+	- Applied option, "Hide Supplemental Name Results"
+- Fixed formatting of text obtained from article to gloss
+- Removed lookahead setting, but increased its internal value
+- Removed filters that ignore common numeric counters and words
+
+Audio
+- Improved punctual pause detection
+- Added removal of empty audio tags in output files
+
+Kanji
+- Automatically select and display info of matching searched kanji
+
+Articles
+- Updated feed configurations
+- Added Mainichi & toku-chi subscriptions
+- Added ability to ignore articles by a page keyword
+- Fixed subscription window repeating shell actions
+
+-------------------------------------------------------------------------------
+
+v1.6.0
+
+General:
+- Improved UI layout
+
+Gloss:
+- Gloss search bar text now matches the result text
+- Terms without definitions will not be counted in readability score
+- Improved search and export of results
+- Improved determined reading detection
+- Determined reading can be changed on click before export, and will be remembered for that session
+- Exported definitions that differ in reading from determined reading will infer from itself
+- Added setting whether to match known words by readings
+- Added setting to remove furigana from adjacent kanji (partial support)
+- Added highlight of elements in heatmap and when clicked
+- Fixed incorrect removal of regex tags in search bar when removing styling
+- Fixed "undefined" searches when selecting the search history menu when empty
+- Fixed first known file word not being marked as a Learning Stage word
+- Fixed exported definitions containing the word "source" being replaced as an export tag
+- Fixed cases where exported terms did not use the Definitions Delimiter
+
+Audio:
+- Changed replacement of symbols with a dash instead of an underscore character
+- Added validation to prevent saving of corrupt files
+
+Kanji:
+- Added border to selected kanji in results pane
+
+Articles:
+- Added LiveDoor, TownWork Magazine, and Tabi Labo subscriptions
+- Added comment section text for Kids@Nifty
+- Changed categories of Kids@Nifty and Yomiuri Komachi from News to Forum
+- Fixed detection of text areas
+- Fixed ability to hide article results
+
+-------------------------------------------------------------------------------
+
+v1.5.2
+
+Gloss:
+- Fixed Word Lookup
+- Improved matching of known words that have honorific prefixes
+
+-------------------------------------------------------------------------------
+
+v1.5.1
+
+- Fixed Activation
+
+-------------------------------------------------------------------------------
+
+
+v1.5.0
+
+Gloss:
+- Improved search results
+- Ignore empty results that are not Japanese
+- Exported words with empty readings will be substituted by its meaning
+- Added settings to better filter results, such as for subtitle files
+- Added Forvo and YouGlish to the External Search drop down menu in results
+
+Gloss & Kanji:
+- Added Google WaveNet Text-To-Speech API
+
+Settings:
+- Improved file and folder validation
+
+-------------------------------------------------------------------------------
+
+v1.4.1
+
+General:
+- Improved speed of scrollbars
+- Improved explanation of settings
+- Activation screen now accepts an Invoice ID
+
+Gloss:
+- Added Gloss heatmap
+- Improved Gloss search results
+- Removed settings to hide known words
+- Improved reliability of exporting terms and display of known terms
+- Added dictionary "PrimaryMeaning" and "PrimaryReading" CSV field names
+- Renamed dictionary "Value" field name to "SelectedMeaning"
+- Renamed dictionary "Source" field name to "SourceText"
+- Renamed dictionary "SourceFg" field name to "SourceTextWithReadings"
+- When the Determined reading is unknown, the PrimaryReading will be assumed
+
+Kanji:
+- Renamed kanji "Value" field name to "Kanji"
+
+Articles:
+- Added TechCrunch and Gendai news subscriptions
+
+-------------------------------------------------------------------------------
+
+v1.4.0
+
+General:
+
+- Added setting to control how a Source is saved to file
+- Added debug command message to console when app is loaded
+- Improved startup load and transition
+- Improved resolution scaling of Gloss and Kanji's top menu
+- Improved performance in various circumstances
+- Updated dictionary files and dependencies
+- Updated license
+- Changed in-app icons to adhere to updated license
+- Improved GUI descriptions
+- Scrolling a panel will no longer scroll the main window area
+
+Gloss:
+
+- Added Gloss & Word Lookup options for search
+- Removed ``re_m:`` and ``re_r:`` prefixes for regex searches
+- Improved Gloss' introduction and moved it to a help button window
+- Added option to ignore likely common particles
+- Improved hiding of hiragana terms by character count
+- Added option to ignore katakana by character count
+- Added display of known & starred entries for regex results
+- Fixed starred terms not appearing as starred when word is unknown
+- Fixed starred status not updating for entries that share a meaning with another entry (e.g. 人)
+- Improved performance and validation of word files when starring or saving terms
+- Added an option to ignore bracketed hiragana of a character count (e.g. to remove furigana: 食（た）べる)
+- Improved clipboard monitoring when window has been inactive for a long period
+- Improved duplicate removal for compounds found via lookahead
+- Improved lookahead matching & inflection detection removal
+- Fixed katakana terms of under 3 characters not being searched
+- Fixed performance problems when large texts are added to the search history menu
+- Underline the likely readings of words
+- Option to save sentences with furigana
+- Greatly increased Gloss speed, but now requires more RAM
+- Changed short and long text lookahead to just lookahead
+- Found katakana compound words will now be split
+- Hiragana and Kanji search accuracy is improved
+- Button to add all searched terms to the known words file
+- Readability will now count a word as known even if only one result is found as known
+- Particles and inflections will no longer be counted as words in the readability score, even if not ignored
+
+Articles:
+
+- Added ability to create subscription feeds in the Subscription window
+- Added support of RSS feeds
+- Added validation of subscription settings
+- Added Gloss' form of readability scoring for parity
+- Subscriptions will now preserve the previous ``enabled`` user setting when updating
+- Improved website localization compatibility (broadcast as Chrome and not Electron; include ``ja-JP`` locale)
+- Removed ``subfollow`` due to maintainability
+- Changed display of subscription information
+- Changed subscription fields - previous custom objects will need to be adapted to the new documentation
+- Improved furigana / ruby-tag removal for text detection
+- Simplified export as HTML only
+
+-------------------------------------------------------------------------------
+
+v1.3.2
+
+Articles:
+
+- Pages will now load with the `ja` language header, coercing websites to display in Japanese if it localizes based on browser language settings
+- Fixed subfollow not resetting its queue after a previous search
+- Fixed subfollow not prepending follow pages when host is empty
+- Improved URL matching
+- Improved load time of articles by blocking font resources
+- Added internal error handling for non-200 status codes, etc
+- Updated web blocking dependency to automatically whitelist article URLs (remote resources loaded from article pages will still be handled normally)
+
+-------------------------------------------------------------------------------
+
+v1.3.1
+
+General:
+
+- Debug information will now be logged to console once ``debug = true`` has been entered into the console
+
+Gloss:
+
+- Added a setting to limit clipboard text to a character count
+- Improved clipboard monitor handling
+- Improved katakana compound word detection with a supplemental method (e.g. スターバックスコーヒー)
+- Improved inflection word detection
+- Removed erroneous marks and English from Gloss results
+- Fixed Gloss from searching twice at once
+
+Articles:
+
+- Added `remove_irrelevant`, which is an optional str bool (`true`, `false`) to enable an internal html filter, to remove likely irrelevant text elements (e.g. headers, footers, links, menus...) and regardless of this option, this internal filter will be automatically applied when a body is not defined
+- Added an internal URL media-extension filter to remove non-text web pages (e.g. images, file types)
+- Changed display purpose of `id` to `name`, and `id` will remain an internal identifier
+- Improved the default text finding method, when none is defined by the user
+- Improved `ignore_urls` options and syntax, allowing either a comma-delimited string with an optional `ignore_urls_pos` value, or an object with a per-url `pos` value which acts as the `ignore_urls_pos` value
+- Improved display of article text preview (by removing chunks of whitespace)
+- Articles without Japanese will be removed
+- Fixed `wait_time` not being acknowledged
+- Improved Readme
+
+-------------------------------------------------------------------------------
+
+v1.3.0
+
+General:
+
+- Added single-column multi-word delimiter support: an option to separate imported word files' word columns by a delimiter for importing multiple words from one line or column
+- Minor UI tweaks (font size, alignments, scrollbar height scaling, context menu...)
+- Fixed dialog interactions
+- Improved Settings display
+- Updated Readme
+- Updated License
+- Updated dependencies
+
+Gloss and Articles:
+
+- Added a Starred Words file, similar to the "known words" file. Starred words can be used for a self-defined goal (e.g. recognizing Anki leeches). Shown in Gloss and Article results
+
+Gloss:
+
+- Added Clipboard Monitoring, to automatically Gloss copied text if it contains Japanese text, and focus the window afterward
+- Fixed unknown terms being matched incorrectly as known terms if first character is in a known term
+- Fixed not being able to match terms by kana reading
+- Fixed not being able to match terms by English meaning when search contains Japanese
+- Improved matching of known terms that contain both kana and kanji
+- Improved search and inflection detection
+- Improved removal of duplicate results
+- Improved removal of source when source is a conjugated verb/adjective and same as saved word
+
+Kanji:
+
+- Improved kana searches, with partial matching from the start of readings rather than exact matching (e.g. た.べる → た or たべ)
+
+Articles:
+
+- Added a Subscriptions window, and abandoned the wiki. Subscriptions can continue to be added and edited manually, and should be compatible with the previous object format
+- Added optional ``subfollow`` field, which finds text from pages linked from a ``follow`` page (e.g. ``/page/2``). Page links are matched at from the start, within, or end of a string via an optional ``subfollow_pos`` field, with the values of ``startswith``, ``includes``, ``endswidth`` and ``regex``. Sub-follows should be relative to the same host or page.
+- Added optional ``follow_pos`` field for the position of where the follow term exists. Same as ``subfollow_pos`` above.
+- Added optional ``id``, ``description``, and ``difficulty`` fields for subscription objects, and ``id`` and ``description`` will be displayed in Article results as a title
+- Added optional ``web_block`` field to enable or disable the internal web blocker for subscription objects (e.g. `"web_block": "false"`) (enabled by default if not present)
+- Improved ignoring of urls from the ``ignore_urls`` property, by internally disregarding starting http syntax, and ending slashes
+- [BREAKING] Added optional ``wait_time`` field, to wait for a number of milliseconds before processing text of a loaded page (e.g. for dynamic text). Previously, there was an internal wait time of 1200 milliseconds, which has now been reduced to 50. This internal change will break sites with dynamic texts, unless the ``wait_time`` field is used. This will otherwise speed up site processing.
+
+-------------------------------------------------------------------------------
+
+v1.2.3
+
+General:
+
+- Removed radio buttons from tabs
+- Updated dependencies
+
+Gloss:
+
+- Fixed Gloss' readability score (again)
+- Improved Gloss' lookahead detection
+- Improved Gloss' inflection detection for hiding
+- Improved Gloss' honorific term matching
+- Lowered Gloss' priority of name matches by not matching when using lookahead
+- Fixed Gloss' katakana terms displaying in hiragana
+- Saving Glossed words will now add all of that word's meanings to the Known Words output file
+- Changed Gloss' kanji pane to a togglable view
+- Gloss now matches names by regex search
+- Updated dictionary files
+
+Kanji:
+
+- Kanji tab highlights searched kanji in results as bold
+- Enlarged kanji font size
+- Added stroke order font for kanji, where a kanji's information is displayed
+- Fixed kanji not saving to output file
+
+Articles:
+
+- Fixed Articles' tab's tag & class removal from websites
+- Improved Articles' tab processing time with an ad blocker
+- Simplified Articles' tab explanation
+- Improved Articles' tab fuzzy matching
+
+-------------------------------------------------------------------------------
+
+v1.2.2
+
+- Fixed/Improved known word detection
+- Improved Gloss' inflection detection for hiding
+
+-------------------------------------------------------------------------------
+
+v1.2.1 (Hotfix):
+
+- Changed Gloss to display *actual* interpreted searched term, which fixes the saving and detection of Source
+
+v1.2.0:
+
+- Removed erroneous dictionary data file(s) from installation
+- Fixed Articles tab processing count
+- Changed Articles tab to combine unknown hiragana terms found together to improve word detection.
+- Improved Articles furigana ruby tag removal (<rt>)
+- Clarified Gloss and Articles Tab explanations
+- Improved import of Kanji tab CSS
+- Improved Gloss' stem word detection (should match stem prior to interpreted matching) (e.g. 禿げ(る))
+- Improved Gloss' inflection detection for hiding (e.g. 遊ん(でる), さ(せる))
+- Improved Gloss' lookahead to detect verb inflected expressions (e.g. 気にして → 気にする)
+- Improved Settings tab readability
+- Ctrl+number now switches between tabs
+
+-------------------------------------------------------------------------------
+
+v1.1.9
+
+- Improved Gloss' saved Source format
+- Improved Gloss' look-ahead detection
+- Gloss detects し-ending adjectives
+- Improved Gloss detection of み-ending verb nouns, and verbs
+- Improved Gloss' known word matching by removing punctuation (e.g. ～を動詞する → 動詞)
+- Prevented fields from gaining focus when alt and shift modifier keys are pressed
+- One-click copy of Kanji from Kanji results
+- Ctrl+Tab and Ctrl+Shift+Tab now switches between tabs
+- Removed backslash at start of Gloss definitions
+- Updated dictionary files
+- Updated dependencies
+
+-------------------------------------------------------------------------------
+
+v1.1.8
+
+- Fixed Gloss' searched reading not matching known word meaning
+- Fixed Gloss' search history menu searching terms when opened
+
+-------------------------------------------------------------------------------
+
+v1.1.7
+
+- Fixed glossed hiragana terms from erroneously matching known words (eg. はやる and は)
+- Fixed "0 to disable" options in settings from not disabling
+- Made ignoring of hiragana term length configurable in settings, for Gloss and Article
+- Fixed processing display disappearing if no Article limit
+- Fixed Gloss displaying duplicate empty verb entries
+- Changed Gloss' known word match from searched terms to found terms
+
+-------------------------------------------------------------------------------
+
+v1.1.6:
+
+- removed internal ignored word list (eg. する, いる, ある) and refined results
+- show a more realistic calculation of article processing, if limits are applied
+- changed Article's ignored hiragana term length from 3 letters to 2
+
+-------------------------------------------------------------------------------
+
+v1.1.5:
+
+- Fixed Gloss' kanji pane displaying duplicate kanji
+- Removed erratic article timeout logic, and instead improved article load handling
+- Fixed "NaN" displayed when readability is 0%
+- Improved Kanji tab mouse highlight
+- Fixed gloss de-conjugation
+
+-------------------------------------------------------------------------------
+
+v1.1.4:
+
+- Retry article pages if 'timed-out'
+- Gracefully continue if processing of an article fails
+- Remove erroneous meaning and source from saved dictionary terms if they do not exist
+- Fixed case sensitivity of Article category selection and display
+- Fixed Gloss displaying duplicate look-ahead terms
+- Improved Gloss verb de-conjugation
+
+-------------------------------------------------------------------------------
+
+v1.1.3
+
+- Updated dependencies
+- Improved window resizing
+- Clear cache on startup
+
+Hotfix:
+- Validated integer settings

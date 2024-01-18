@@ -1,0 +1,66 @@
+v1.2.2
+
+- Updated dependencies & updater checks
+- Fixed search not showing Microsoft IME suggestions
+- Removed some opinionated preset JavaScript in subscriptions
+
+-------------------------------------------------------------------------------
+
+v1.2.1
+
+- Always allow Zoom and Close context menu options
+- Improved automatic html cleanup after ad removal
+- Fixed improper error dialog on profile creation
+- Fixed unit measurements of resized elements
+- Improved hotkey (Ctrl+F) usability since 1.2.0
+- Changed main window inspect element to console
+- Prevented multiple app instances
+
+-------------------------------------------------------------------------------
+
+v1.2.0
+
+- Updated dependencies
+- Changed activation to donation
+- On view load, the searched term will now be highlighted
+- Updated subscriptions will now be more apparent
+- Added subscription option to auto-hide ruby text (e.g. Japanese furigana)
+- Fixed not being able to modify subscriptions containing properties not found in the modal view
+- Breaking: Changed tag, id, and class removal syntax to querySelectorAll syntax using the name "remove_query_selectors"
+- Breaking: Removed resize_from_element and resize_width, but improved automatic body resizing by frame width
+
+-------------------------------------------------------------------------------
+
+v1.1.1
+
+- Fixed scrolling functionality breaking on certain systems
+- Improved search bar display on certain systems
+
+-------------------------------------------------------------------------------
+
+v1.1.0
+
+- Updated display of main window
+- Added subscription window to manage profiles, presets, and websites to load
+- Updated subscription presets to display mobile view
+- Fixed Ctrl+F search not working after closing a view
+- Fixed error message from displaying on app close
+- Improved context menu
+- Updated dependencies
+- Updated license
+
+-------------------------------------------------------------------------------
+
+v1.0.1
+
+- Fixed: Inability to search the same term in a different category
+- Improved: Ctrl+F searches will now be contained to active categories
+- Improved: Web blocker will now automatically whitelist searched pages
+- Improved: Right-click context menu for images, with 'Copy Image' and 'Copy Image URL'
+- Improved: Workaround an Electron bug that causes views to not appear or update
+
+-------------------------------------------------------------------------------
+
+v1.0.0
+
+- First release.
