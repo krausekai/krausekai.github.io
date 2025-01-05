@@ -128,6 +128,6 @@
 	// redirect
 
 	let newUrl = window.location.protocol + "//" + window.location.host + decodedPath;
-	//newUrl = newUrl.replace(/https:\/\/www.krausekai.com/g, "http://localhost:4000");
+	//newUrl = newUrl.replace(/https:\/\/krausekai.github.io/g, "http://localhost:4000");
 	if (!decodeURIComponent(url).includes(newUrl)) window.location.href = newUrl;
 })();

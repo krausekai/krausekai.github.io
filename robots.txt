@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /analytics/
 
-Sitemap: https://www.krausekai.com/sitemap.xml
+Sitemap: https://krausekai.github.io/sitemap.xml
