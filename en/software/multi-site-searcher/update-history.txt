@@ -1,3 +1,10 @@
+v1.2.3
+
+- Updated dependencies & website URLs
+- Improved view onload search term highlight handling
+
+-------------------------------------------------------------------------------
+
 v1.2.2
 
 - Updated dependencies & updater checks

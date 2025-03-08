@@ -1,3 +1,15 @@
+v1.7.2
+
+General
+- Updated website URLs
+
+Gloss
+- Added mouse forward and back button history navigation
+- Fixed display of tags with nested brackets
+- Improved lookahead
+
+-------------------------------------------------------------------------------
+
 v1.7.1
 
 General
